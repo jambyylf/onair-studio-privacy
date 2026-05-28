@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аккаунтты өшіру — ONAIR Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0a17;
+    --bg-2:#15102a;
+    --violet:#8b5cf6;
+    --violet-soft:#a78bfa;
+    --gold:#d8b56a;
+    --text:#ece9f5;
+    --muted:#9b95b5;
+    --line:rgba(139,92,246,.18);
+    --card:rgba(255,255,255,.03);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(139,92,246,.22), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(216,181,106,.10), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Manrope',sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:64px 28px 96px}
+  .brand{
+    display:flex;align-items:center;gap:12px;margin-bottom:48px;
+    font-weight:700;letter-spacing:.5px;font-size:15px;
+  }
+  .brand .dot{width:10px;height:10px;border-radius:50%;
+    background:linear-gradient(135deg,var(--violet),var(--gold));
+    box-shadow:0 0 18px var(--violet);}
+  .brand span{color:var(--gold)}
+  .eyebrow{
+    font-size:12px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--violet-soft);font-weight:600;margin-bottom:14px;
+  }
+  h1{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:clamp(34px,6vw,52px);line-height:1.05;
+    letter-spacing:-.5px;margin-bottom:18px;
+  }
+  h1 em{font-style:italic;color:var(--gold)}
+  .lead{color:var(--muted);font-size:17px;max-width:58ch;margin-bottom:8px}
+  .rule{height:1px;background:linear-gradient(90deg,var(--line),transparent);margin:42px 0}
+  h2{
+    font-family:'Fraunces',serif;font-weight:600;font-size:24px;
+    margin-bottom:18px;letter-spacing:-.2px;
+  }
+  h2 .num{
+    font-family:'Manrope';font-size:13px;color:var(--gold);
+    border:1px solid var(--line);border-radius:8px;
+    padding:3px 9px;margin-right:12px;vertical-align:middle;
+  }
+  p{color:#c9c4dd;margin-bottom:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:16px;padding:26px 28px;margin:18px 0;
+  }
+  ol,ul{margin:6px 0 6px 4px;padding-left:22px}
+  li{margin-bottom:12px;color:#c9c4dd}
+  li strong{color:var(--text)}
+  .mail{
+    display:inline-flex;align-items:center;gap:10px;
+    background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(216,181,106,.10));
+    border:1px solid var(--line);border-radius:12px;
+    padding:14px 20px;margin-top:8px;
+    color:var(--text);text-decoration:none;font-weight:600;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .mail:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(139,92,246,.25)}
+  .mail b{color:var(--gold)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .tag{
+    font-size:11px;letter-spacing:2px;text-transform:uppercase;
+    font-weight:700;margin-bottom:10px;display:block;
+  }
+  .tag.del{color:#f0a3a3}
+  .tag.keep{color:var(--gold)}
+  .pill{
+    display:inline-block;font-size:13px;color:var(--violet-soft);
+    border:1px solid var(--line);border-radius:999px;padding:5px 14px;
+    margin:4px 6px 0 0;
+  }
+  footer{margin-top:56px;color:var(--muted);font-size:13px;line-height:1.7}
+  footer a{color:var(--violet-soft);text-decoration:none}
+  .note{font-size:13px;color:var(--muted);font-style:italic;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand"><span class="dot"></span>ONAIR&nbsp;<span>STUDIO</span></div>
+
+  <div class="eyebrow">Деректі басқару</div>
+  <h1>Аккаунтыңды <em>өшіру</em></h1>
+  <p class="lead">Бұл бет ONAIR Studio қолданбасының (әзірлеуші: ONAIR Studio) аккаунтыңды және онымен байланысты деректі қалай өшіретініңді түсіндіреді.</p>
+
+  <div class="rule"></div>
+
+  <h2><span class="num">01</span>Қолданба ішінен өшіру</h2>
+  <div class="card">
+    <ol>
+      <li>ONAIR Studio қолданбасын аш.</li>
+      <li><strong>Профиль → Баптаулар</strong> бөліміне өт.</li>
+      <li>Төменнен <strong>«Аккаунтты өшіру»</strong> түймесін бас.</li>
+      <li>Растауды енгізіп, өшіруді бекіт.</li>
+    </ol>
+    <p class="note">Растаудан кейін аккаунт өшіру процесі бірден басталады.</p>
+  </div>
+
+  <h2><span class="num">02</span>Хат арқылы сұрау</h2>
+  <p>Қолданбаға кіре алмасаң, өшіру сұрауын мына поштаға жібер. Хатта аккаунтыңа тіркелген <strong>email-ді немесе телефон нөмірін</strong> көрсет.</p>
+  <a class="mail" href="mailto:support@onairpro.kz?subject=Account%20deletion%20request">✉️ <b>support@onairpro.kz</b></a>
+  <p class="note">Сұрауды 7 жұмыс күні ішінде өңдейміз.</p>
+
+  <div class="rule"></div>
+
+  <h2>Қандай дерек өшеді, қандайы сақталады</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="tag del">Толық өшеді</span>
+      <span class="pill">Аты-жөні</span>
+      <span class="pill">Email</span>
+      <span class="pill">Профиль деректері</span>
+      <span class="pill">Кіру (auth) деректері</span>
+      <span class="pill">Қолданушы контенті</span>
+      <span class="pill">Баптаулар</span>
+    </div>
+    <div class="card">
+      <span class="tag keep">Уақытша сақталады</span>
+      <span class="pill">Төлем/чек жазбалары</span>
+      <p class="note" style="margin-top:14px">Заң мен бухгалтерлік талаптарға сай төлем тарихы шектеулі мерзімге сақталуы мүмкін, одан кейін біржола жойылады.</p>
+    </div>
+  </div>
+
+  <footer>
+    ONAIR Studio · <a href="https://onairpro.kz/privacy">Құпиялылық саясаты</a><br>
+    Сұрақтарың болса: <a href="mailto:support@onairpro.kz">support@onairpro.kz</a>
+  </footer>
+
+</div>
+</body>
+</html>
